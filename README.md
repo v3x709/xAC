@@ -1,9 +1,9 @@
 ```markdown
-# Ultimate Anti-Cheat System
+# xAC
 
 ## Overview
 
-The Ultimate Anti-Cheat System is a highly advanced, production-ready anti-cheat solution designed for Windows 11 games. It surpasses industry standards like BattlEye and Ricochet by incorporating self-improving machine learning, event-based detection, hardware integrity checks, and secure server validation. The system is modular, with strict separation between kernel-mode (for stability) and user-mode (for complex logic), ensuring minimal performance impact even on low-end devices.
+The xAC System is a highly advanced, production-ready anti-cheat solution designed for Windows 11 games. It surpasses industry standards like BattlEye and Ricochet by incorporating self-improving machine learning, event-based detection, hardware integrity checks, and secure server validation. The system is modular, with strict separation between kernel-mode (for stability) and user-mode (for complex logic), ensuring minimal performance impact even on low-end devices.
 
 This project is for educational and research purposes only. It demonstrates cutting-edge techniques in game security but should not be used for malicious activities. See the [License](#license) and [Disclaimer](#disclaimer) sections for details.
 
@@ -45,12 +45,10 @@ This project is for educational and research purposes only. It demonstrates cutt
    ```
 
 2. **Build User-Mode (Client)**:
-   - Use CMake:
-     ```
-     cmake -S . -B build
-     cmake --build build --config Release
-     ```
-   - This builds `AntiCheatMain.exe` and shared libs.
+   ```
+   cmake -S . -B build
+   cmake --build build --config Release
+   ```
 
 3. **Build Kernel Driver**:
    - Open `KernelDriver.cpp` in Visual Studio with WDK installed.
