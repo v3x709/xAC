@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(UltimateAntiCheat)
+add_library(shared SHARED DetectionUtils.cpp MLProcessing.cpp)
+add_executable(AntiCheatMain AntiCheatMain.cpp)
+target_link_libraries(AntiCheatMain shared [Libs: opencv, tensorflowlite, etc.])
